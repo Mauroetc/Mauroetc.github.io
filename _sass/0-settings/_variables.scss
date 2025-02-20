@@ -3,10 +3,10 @@
 // *****************
 
 // Spaces
-$base-spacing-unit: 24px;
+$base-spacing-unit: 20px;
 
 // Border radius
-$global-radius: 8px;
+$global-radius: 4px;
 
 // Transition
 $global-transition: all .2s;
@@ -15,13 +15,13 @@ $global-transition: all .2s;
 // *****************
 // Color Variables
 // *****************
-$brand-color: #FFB347;    // Warmer orange
-$dark: #1A1A1A;           // Softer black
-$gray: #4A4A4A;           // Neutral gray
-$light-gray: #2D2D2D;     // Slightly lighter background
-$white: #F5F5F5;          // Off-white for better readability
-$black: #121212;          // True black for contrast
-$accent: #FF6B6B;         // Vibrant coral accent
+$brand-color: #db9e48;
+$dark: #1c1818;
+$gray: #3F4A3C;
+$light-gray: #292929;
+$white: #ffe5c3;
+$black: #1c1818;
+$accent: #943030;
 
 // Background Colors
 $background-color: $dark;
@@ -51,12 +51,12 @@ $base-font-size: 16px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Inter', 'Roboto', -apple-system, system-ui, sans-serif;
+$base-font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 $base-line-height: 26px;
 
 // Headings
 $heading-font-weight: 700;
-$heading-font-family: 'Poppins', 'Roboto', -apple-system, system-ui, sans-serif;
+$heading-font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 
 $font-size-h1:  36px;
 $font-size-h2:  28px;

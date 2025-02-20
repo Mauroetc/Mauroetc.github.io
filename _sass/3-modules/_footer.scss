@@ -1,96 +1,25 @@
 .footer {
-  margin-top: 80px;
-  padding: 60px 0;
-  background: linear-gradient(to bottom, $dark, $black);
-  border-top: 1px solid rgba($white, 0.1);
+  position: relative;
+  padding: 80px 0 40px;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  background: $light-gray;
 
-  &__inner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    max-width: $container-base-width;
-    margin: 0 auto;
-    padding: 0 $base-spacing-unit;
+  .contact {
+    margin-bottom: 15px;
   }
 
-  &__info {
-    h3 {
-      color: $brand-color;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      color: rgba($white, 0.7);
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &__social {
-    display: flex;
-    gap: 1rem;
-    
+  .copyright {
+    color: $text-color;
     a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgba($white, 0.1);
-      color: $white;
-      transition: all 0.3s ease;
-      
-      &:hover {
-        background: $brand-color;
-        transform: translateY(-3px);
-      }
-    }
-  }
-
-  &__links {
-    h4 {
       color: $brand-color;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      
-      li {
-        margin-bottom: 0.5rem;
-        
-        a {
-          color: rgba($white, 0.7);
-          text-decoration: none;
-          transition: all 0.2s ease;
-          
-          &:hover {
-            color: $white;
-            padding-left: 5px;
-          }
-        }
+      &:hover {
+        color: $accent;
       }
     }
   }
 
-  &__bottom {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba($white, 0.1);
-    text-align: center;
-    color: rgba($white, 0.5);
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: $tablet) {
-  .footer {
-    margin-top: 60px;
-    padding: 40px 0;
-    
-    &__inner {
-      gap: 2rem;
-    }
+  @media only screen and (max-width: $mobile) {
+    padding: 40px 0 20px;
   }
 }

@@ -1,67 +1,6 @@
 .header {
-  position: sticky;
-  top: 0;
-  background: rgba($dark, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba($white, 0.1);
-  z-index: 100;
-  transition: transform 0.3s ease;
-
-  &.header--hidden {
-    transform: translateY(-100%);
-  }
-
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 $base-spacing-unit;
-  }
-
-  &__logo {
-    font-family: $heading-font-family;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: $brand-color;
-    
-    &:hover {
-      color: $accent;
-    }
-  }
-
-  &__nav {
-    display: flex;
-    gap: 2rem;
-    
-    a {
-      position: relative;
-      color: $white;
-      font-weight: 500;
-      text-decoration: none;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 100%;
-        height: 2px;
-        background: $brand-color;
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-      }
-      
-      &:hover::after,
-      &.active::after {
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  &__menu-toggle {
-    display: none;
-  }
+  position: relative;
+  height: 100px;
 
   .header__overlay {
     position: fixed;
@@ -80,54 +19,6 @@
       &.is-visible {
         opacity: 1;
         visibility: visible;
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .header {
-    &__nav {
-      position: fixed;
-      top: 70px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      gap: 0;
-      background: $dark;
-      padding: 1rem 0;
-      transform: translateY(-100%);
-      opacity: 0;
-      transition: all 0.3s ease;
-      
-      &.active {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      
-      a {
-        padding: 1rem $base-spacing-unit;
-        
-        &::after {
-          display: none;
-        }
-        
-        &:hover {
-          background: rgba($brand-color, 0.1);
-        }
-      }
-    }
-
-    &__menu-toggle {
-      display: block;
-      background: none;
-      border: none;
-      color: $white;
-      cursor: pointer;
-      
-      svg {
-        width: 24px;
-        height: 24px;
       }
     }
   }
