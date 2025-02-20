@@ -4,22 +4,64 @@ layout: default
 {% include hero.html %}
 
 <div class="container">
-	<div class="row">
-		<div class="col col-12">
-			{% if site.posts.size > 0 %}
-				<h4 class="lates-title">Latest Posts</h4>
-			{% endif %}
-		</div>
-	</div>
+  <div class="row">
+    <div class="col col-12">
+      <h2 class="section-title">Portfólio</h2>
+    </div>
+  </div>
 </div>
 
 <div class="container">
-	<div class="row">
-	{% if site.posts.size > 0 %}
-		{% for post in paginator.posts %}
-			{% include article-content.html %}
-		{% endfor %}
-	{% endif %}
-	</div>
+  <div class="row">
+    <!-- Animation Section -->
+    <div class="col col-6 col-t-12 work-box">
+      <a href="/animation" class="portfolio-item">
+        <div class="portfolio-item__content">
+          <h3 class="portfolio-item__title">Animação</h3>
+          <p class="portfolio-item__description">Explore meus trabalhos em animação digital e tradicional</p>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Programming Section -->
+    <div class="col col-6 col-t-12 work-box">
+      <a href="/programming" class="portfolio-item">
+        <div class="portfolio-item__content">
+          <h3 class="portfolio-item__title">Programação</h3>
+          <p class="portfolio-item__description">Projetos de desenvolvimento e soluções técnicas</p>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Video Section -->
+    <div class="col col-6 col-t-12 work-box">
+      <a href="/video" class="portfolio-item">
+        <div class="portfolio-item__content">
+          <h3 class="portfolio-item__title">Vídeo</h3>
+          <p class="portfolio-item__description">Produções audiovisuais e edição</p>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Motion Design Section -->
+    <div class="col col-6 col-t-12 work-box">
+      <a href="/motion" class="portfolio-item">
+        <div class="portfolio-item__content">
+          <h3 class="portfolio-item__title">Motion Design</h3>
+          <p class="portfolio-item__description">Animação gráfica e efeitos visuais</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
-{% include pagination.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <h2 class="section-title">Destaques</h2>
+      <div class="achievements-preview">
+        <p class="achievements-text">Conheça alguns dos meus <a href="/achievements">projetos em destaque e conquistas</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
