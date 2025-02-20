@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  padding: 80px 0 40px;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  background: $light-gray;
+
+  .contact {
+    margin-bottom: 15px;
+  }
+
+  .copyright {
+    color: $text-color;
+    a {
+      color: $brand-color;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 40px 0 20px;
+  }
+}
