@@ -2,23 +2,51 @@
 layout: page
 title: Motion Design
 permalink: /motion/
+image: 03.jpg
 ---
 
-# Portfólio de Motion Design
+# Motion Design
 
-Bem-vindo à minha seção de motion design. Aqui você encontrará meus trabalhos em animação gráfica e efeitos visuais.
+## Projetos Comerciais
 
-## Projetos em Destaque
+### Logonove Produções (2011-2015)
+- Animatics para campanhas Unilever (Knorr, Kibon)
+- Photomatics para Margarina Becel e Omo Progress
+- Desenvolvimento de apresentações animadas
+- [Portfolio Logonove](http://www.logonove.com.br)
 
-[Área para seus projetos de motion design]
+### GH2J - Agência de Comunicação
+- Banners animados
+- Motion graphics para campanhas digitais
+- Vídeos institucionais
+- Elementos interativos
 
 ## Especialidades
-- Motion Graphics
-- Visual Effects
-- Typography Animation
-- [Outras especialidades]
 
-## Software
-- Adobe After Effects
+### Motion Graphics
+- Typography Animation
+- Logo Animation
+- Kinetic Text
+- Brand Elements
+- Interface Animation
+
+### Visual Effects
+- Compositing
+- Color Grading
+- Particle Systems
+- Dynamic Effects
+- Screen Replacements
+
+### Technical Skills
+- Expression Scripts
+- Template Creation
+- Pipeline Optimization
+- Render Management
+- Asset Organization
+
+## Ferramentas
+- Adobe After Effects (Avançado)
 - Cinema 4D
-- [Outros softwares que você utiliza]
+- DaVinci Resolve
+- Mocha Pro
+- Cavalry

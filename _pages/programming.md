@@ -2,23 +2,65 @@
 layout: page
 title: Programação
 permalink: /programming/
+image: 04.jpg
 ---
 
-# Portfólio de Programação
+# Desenvolvimento de Software
 
-Bem-vindo à minha seção de desenvolvimento de software. Aqui você encontrará meus principais projetos e contribuições na área de programação.
+## Projetos Open Source
 
-## Projetos em Destaque
+### EasyRPG Player (2023-2024)
+- Desenvolvimento em C++
+- Migração do sistema JSON (picoJSON para Nlohmann's JSON)
+- Implementação de configurações locais
+- Otimização de performance
+- Contribuições ativas no [GitHub](https://github.com/EasyRPG/Player)
 
-[Área para seus projetos de programação]
+### SVG-2-PIXELART
+- Ferramenta web para conversão vetor-pixel
+- Integração com API SVGO
+- Interface intuitiva no GitHub Pages
+- Documentação detalhada
+- [Repositório do Projeto](https://github.com/user/svg-2-pixelart)
+
+### After-Effects-Smooth-Path-Expression
+- Expressões otimizadas para After Effects
+- Suavização de movimento aprimorada
+- Código aberto e documentado
+
+## Projetos Educacionais
+
+### Atheva (2009-2011)
+- Desenvolvimento de jogos educativos
+- Programação em ActionScript 3, XML e JSON
+- Sistema de progressão e pontuação
+- Integração com plataforma Kademi
+
+### YTOKÊ (WebApp)
+- Aplicativo de Karaokê integrado com LastFM e YouTube
+- Desenvolvimento em JavaScript
+- Interface responsiva em CSS
+- Integração com biblioteca Invidious
 
 ## Tecnologias
-- [Linguagens de programação]
-- [Frameworks]
-- [Ferramentas]
 
-## Experiência Profissional
-[Destaque seus principais trabalhos e realizações]
+### Linguagens
+- JavaScript (Avançado)
+- C++ (Intermediário)
+- Python
+- ActionScript 3
+- HTML/CSS
 
-## GitHub e Contribuições
-[Link para seus repositórios e contribuições]
+### Frameworks & Ferramentas
+- Git/GitHub
+- Node.js
+- JSON Processing
+- Web APIs
+- Build Tools
+
+### Áreas de Expertise
+- Desenvolvimento Web
+- Automação
+- Ferramentas Criativas
+- Integração de APIs
+- WebGL e Canvas

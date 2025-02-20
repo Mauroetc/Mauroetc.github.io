@@ -2,24 +2,52 @@
 layout: page
 title: Conquistas
 permalink: /achievements/
+image: 01.jpg
 ---
 
-# Conquistas e Reconhecimentos
+# Projetos Premiados e Destaques
 
-Esta página destaca os principais marcos, prêmios e reconhecimentos da minha carreira profissional.
+## MIS - O Experimento (2016)
+- Selecionado pelo Edital "Núcleo Experimental de Cinema" do MIS
+- Eleito entre os Melhores de 2016 pela "Semana Paulistana de Curta-Metragem"
+- Exibição internacional em festivais de Portugal e Estados Unidos
+- [Assista ao Trailer](https://www.youtube.com/watch?v=hdm5Hw-vIO8)
 
-## Prêmios
+## Mc Don't (2015)
+- Segundo lugar em duas categorias no Festival Internacional Entretodos
+- Premiação pelo Júri Popular e Júri Online
+- [Assista ao Curta](https://youtu.be/5Bxp1hlmC88)
 
-[Liste seus prêmios e reconhecimentos]
+## TINKUS - Documentário (2014)
+- Documentário sobre as raízes bolivianas no Brasil
+- Direção em parceria com Marcelo Ferraro
+- Exibido em mostras culturais internacionais
+- [Assista ao Documentário](https://www.youtube.com/watch?v=PaVpzwjYBic)
 
-## Certificações
+## Projetos em Destaque
 
-[Liste suas certificações relevantes]
+### Street Fighter Stopmotion
+Experimento em animação stop motion combinando técnicas tradicionais e digitais.
+- Co-direção e Animação
+- [Assista ao Projeto](https://www.youtube.com/watch?v=Pa2F18nurnM)
 
-## Projetos Destacados
+### Adobe Creative Residency
+Projeto destacado nos canais oficiais da Adobe
+- Colaboração com artistas renomados
+- Desenvolvimento de técnicas inovadoras de animação
+- Reconhecimento pela comunidade criativa
 
-[Destaque projetos especiais ou de grande impacto]
+## Contribuições Open Source
 
-## Depoimentos
+### EasyRPG Player (2023-2024)
+- Implementação de recursos críticos para o motor
+- Migração do sistema JSON
+- Otimização de performance
+- [Repositório do Projeto](https://github.com/EasyRPG/Player)
 
-[Área para depoimentos de clientes ou parceiros]
+### SVG-2-PIXELART
+Ferramenta inovadora para conversão entre arte vetorial e pixel art
+- Projeto mais popular do portfólio
+- Integração com SVGO
+- Interface web intuitiva
+- Utilizado pela comunidade de desenvolvedores
