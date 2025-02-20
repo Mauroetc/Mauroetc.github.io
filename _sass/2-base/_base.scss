@@ -141,14 +141,14 @@ hr {
   display: block;
   padding: 35px;
   margin-bottom: 30px;
-  background-color: var(--light-gray);
+  background-color: $light-gray;
   border-radius: 16px;
   transition: all .3s ease;
   
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background-color: var(--white);
+    background-color: $white;
   }
   
   &__content {
@@ -158,12 +158,12 @@ hr {
   &__title {
     font-size: 28px;
     margin-bottom: 15px;
-    color: var(--dark);
+    color: $dark;
   }
   
   &__description {
     font-size: 16px;
-    color: var(--gray);
+    color: $gray;
     line-height: 1.5;
   }
 }
@@ -173,7 +173,7 @@ hr {
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
-  color: var(--dark);
+  color: $dark;
 }
 
 .achievements-preview {
@@ -182,14 +182,14 @@ hr {
   
   .achievements-text {
     font-size: 18px;
-    color: var(--gray);
+    color: $gray;
     
     a {
-      color: var(--dark);
+      color: $dark;
       text-decoration: underline;
       
       &:hover {
-        color: var(--brand-color);
+        color: $brand-color;
       }
     }
   }

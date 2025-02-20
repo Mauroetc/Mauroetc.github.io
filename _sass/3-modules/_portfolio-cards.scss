@@ -1,0 +1,185 @@
+// Common card layouts
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.base-card {
+  background: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  &.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+  }
+}
+
+// Common hero section
+.page-hero {
+  height: 300px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+  }
+}
+
+// Common filter/category buttons
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &.active,
+    &:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+}
+
+// Common tags/pills
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+  
+  .tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+// Common skill bars
+.skill-bar {
+  display: grid;
+  gap: 0.5rem;
+  
+  .bar-container {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    width: var(--level);
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+}
+
+// Common media containers
+.media-container {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  
+  img, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Common play button overlay
+.play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+  }
+  
+  i {
+    font-size: 3rem;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Common expertise/skills grid
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  
+  .expertise-card {
+    background: var(--background-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    i {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

@@ -24,8 +24,8 @@ image: 04.jpg
   </div>
 </div>
 
-<div class="project-grid">
-  <div class="project-card featured">
+<div class="card-grid">
+  <div class="base-card featured">
     <div class="card-header">
       <h2>EasyRPG Player</h2>
       <div class="project-meta">
@@ -36,10 +36,10 @@ image: 04.jpg
       </div>
     </div>
     <div class="card-body">
-      <div class="tech-tags">
-        <span class="tech-tag">C++</span>
-        <span class="tech-tag">JSON</span>
-        <span class="tech-tag">Performance</span>
+      <div class="tags">
+        <span class="tag">C++</span>
+        <span class="tag">JSON</span>
+        <span class="tag">Performance</span>
       </div>
       <ul class="feature-list">
         <li>Migração do sistema JSON (picoJSON para Nlohmann's JSON)</li>
@@ -50,7 +50,7 @@ image: 04.jpg
     </div>
   </div>
 
-  <div class="project-card">
+  <div class="base-card">
     <div class="card-header">
       <h2>SVG-2-PIXELART</h2>
       <div class="project-meta">
@@ -61,10 +61,10 @@ image: 04.jpg
       </div>
     </div>
     <div class="card-body">
-      <div class="tech-tags">
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">SVGO</span>
-        <span class="tech-tag">Web API</span>
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">SVGO</span>
+        <span class="tag">Web API</span>
       </div>
       <ul class="feature-list">
         <li>Ferramenta web para conversão vetor-pixel</li>
@@ -74,7 +74,7 @@ image: 04.jpg
     </div>
   </div>
 
-  <div class="project-card">
+  <div class="base-card">
     <div class="card-header">
       <h2>After-Effects-Smooth-Path</h2>
       <div class="project-meta">
@@ -85,9 +85,9 @@ image: 04.jpg
       </div>
     </div>
     <div class="card-body">
-      <div class="tech-tags">
-        <span class="tech-tag">ExtendScript</span>
-        <span class="tech-tag">After Effects</span>
+      <div class="tags">
+        <span class="tag">ExtendScript</span>
+        <span class="tag">After Effects</span>
       </div>
       <ul class="feature-list">
         <li>Expressões otimizadas para After Effects</li>
@@ -98,8 +98,8 @@ image: 04.jpg
   </div>
 </div>
 
-<div class="skills-matrix">
-  <div class="matrix-card">
+<div class="expertise-grid">
+  <div class="expertise-card">
     <h3>Desenvolvimento Web</h3>
     <div class="skill-bars">
       <div class="skill-bar">
@@ -123,7 +123,7 @@ image: 04.jpg
     </div>
   </div>
 
-  <div class="matrix-card">
+  <div class="expertise-card">
     <h3>Ferramentas & DevOps</h3>
     <div class="tool-grid">
       <div class="tool-item">
@@ -147,6 +147,7 @@ image: 04.jpg
 </div>
 
 <style>
+/* Keep only page-specific styles */
 .tech-stack-banner {
   display: flex;
   justify-content: center;
@@ -167,38 +168,6 @@ image: 04.jpg
   color: var(--primary-color);
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.project-card {
-  background: var(--background-color);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card.featured {
-  grid-column: 1 / -1;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  color: white;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-
 .project-meta {
   display: flex;
   gap: 1rem;
@@ -216,24 +185,6 @@ image: 04.jpg
   gap: 0.3rem;
   text-decoration: none;
   color: inherit;
-}
-
-.tech-tags {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.tech-tag {
-  background: rgba(var(--primary-color-rgb), 0.1);
-  padding: 0.2rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.9rem;
-}
-
-.featured .tech-tag {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .feature-list {
@@ -256,63 +207,5 @@ image: 04.jpg
 
 .featured .feature-list li::before {
   color: white;
-}
-
-.skills-matrix {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.matrix-card {
-  background: var(--background-color);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.skill-bars {
-  display: grid;
-  gap: 1rem;
-}
-
-.skill-bar {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.bar-container {
-  height: 8px;
-  background: #eee;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.bar {
-  height: 100%;
-  width: var(--level);
-  background: var(--primary-color);
-  border-radius: 4px;
-}
-
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.tool-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.tool-item i {
-  font-size: 2rem;
-  color: var(--primary-color);
 }
 </style>

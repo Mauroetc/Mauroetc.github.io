@@ -31,8 +31,6 @@ google-analytics: # Add your identifier
 #-------------------------------
 # Navigation Menu
 menu:
-  - url: /
-    name: Home
   - url: /about/
     name: Sobre
   - url: /animation/

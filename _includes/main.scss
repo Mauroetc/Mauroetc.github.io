@@ -27,6 +27,7 @@
     3.7 Subscribe
     3.8 Instagram
     3.9 Footer
+    3.10 Portfolio Components
 
 :: 4-Layouts
     4.1 Page-home
@@ -95,8 +96,11 @@
 // 3.8 Instagram
 @import '3-modules/instagram';
 
-// 3.9 Instagram
+// 3.9 Footer
 @import '3-modules/footer';
+
+// 3.10 Portfolio Components
+@import '3-modules/portfolio-cards';
 
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
