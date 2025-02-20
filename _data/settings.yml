@@ -42,3 +42,22 @@ google-analytics: # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Newsletter
 mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+
+#-------------------------------
+# Navigation Menu
+menu:
+  - url: /
+    name: Home
+  - url: /about/
+    name: Sobre
+  - url: /animation/
+    name: Animação
+  - url: /programming/
+    name: Programação
+  - url: /video/
+    name: Vídeo
+  - url: /motion/
+    name: Motion Design
+  - url: /achievements/
+    name: Conquistas
