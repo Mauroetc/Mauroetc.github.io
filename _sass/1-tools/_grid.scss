@@ -1,133 +1,67 @@
-$columns: 12;
-$container-base-width: 1200px;
-$container-offset: $base-spacing-unit;
-
-$desktop: 992px;
-$tablet:  768px;
-$mobile:  576px;
-
-$mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
+// Modern fluid grid system
+$grid-columns: 12;
+$grid-gutter: 24px;
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
 .container {
-  max-width: $container-base-width;
-  padding-left: $container-offset;
-  padding-right: $container-offset;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.container-full {
-  max-width: 100%;
-  padding-left: $container-offset;
-  padding-right: $container-offset;
-  margin: 0 auto;
+  padding: 0 $grid-gutter;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 1 auto;
-  flex-direction: row;
-  box-sizing: border-box;
-  margin-left: ($base-spacing-unit * -1);
-  margin-right: ($base-spacing-unit * -1);
+  margin: -($grid-gutter / 2);
 }
 
+// Generate column classes
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$breakpoint-name}-#{$i} {
+        flex: 0 0 percentage($i / $grid-columns);
+        max-width: percentage($i / $grid-columns);
+        padding: ($grid-gutter / 2);
+      }
+    }
+  }
+}
+
+// Auto-column for equal width
 .col {
-  padding-left: $base-spacing-unit;
-  padding-right: $base-spacing-unit;
+  flex: 1 0 0;
+  padding: ($grid-gutter / 2);
 }
 
-[class^="col-"] {
-  flex: auto;
-}
-
-
-@for $i from 0 through $columns {
-  .col-#{$i} {
-    width: percentage( $i / $columns );
-  }
-}
-
-@for $i from 0 through $columns {
-  .push-#{$i} {
-    margin-left: percentage( $i / $columns );
-  }
-}
-
-@for $i from 0 through $columns {
-  .pull-#{$i} {
-    margin-right: percentage( $i / $columns );
+// Utility classes for spacing
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    .gap-#{$breakpoint-name} {
+      gap: $grid-gutter;
+    }
+    
+    .gap-#{$breakpoint-name}-sm {
+      gap: ($grid-gutter / 2);
+    }
+    
+    .gap-#{$breakpoint-name}-lg {
+      gap: ($grid-gutter * 2);
+    }
   }
 }
 
-
-@each $key, $val in $mq {
-
-  // DESKTOP
-  @media(max-width: $desktop) {
-
-    @for $i from 0 through $columns {
-      .col-d-#{$i} {
-        width: percentage( $i / $columns );
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-d-#{$i} {
-        margin-left: percentage( $i / $columns );
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-d-#{$i} {
-        margin-right: percentage( $i / $columns );
-      }
-    }
-  }
-
-
-  // TABLET
-  @media(max-width: $tablet) {
-
-    @for $i from 0 through $columns {
-      .col-t-#{$i} {
-        width: percentage( $i / $columns );
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-t-#{$i} {
-        margin-left: percentage( $i / $columns );
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-t-#{$i} {
-        margin-right: percentage( $i / $columns );
-      }
-    }
-  }
-
-  // MOBILE
-  @media(max-width: $mobile) {
-
-    @for $i from 0 through $columns {
-      .col-m-#{$i} {
-        width: percentage( $i / $columns );
-      }
-    }  
-
-    @for $i from 0 through $columns {
-      .push-m-#{$i} {
-        margin-left: percentage( $i / $columns );
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-m-#{$i} {
-        margin-right: percentage( $i / $columns );
-      }
-    }
-  }
-
+// Masonry grid support
+.grid-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 0;
+  grid-gap: $grid-gutter;
 }
